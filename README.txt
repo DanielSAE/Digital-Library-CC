@@ -60,7 +60,7 @@ Desweiteren wurden ca. 15 Bücher unterschiedlicher Kategorien hinzugefügt.
 3. Vorhandener Quellcode
 
 
-S�mtlicher Quellcode (PHP, Javascript, HTML) sowie das Layout wurden von mir selbst erstellt und getestet. Ausnahme: Die Javascript-Plugins "Fancybox" (Lightbox Plugin) und "Nivo-Slider" (Slideshow-Plugin).
+Sämtlicher Quellcode (PHP, Javascript, HTML) sowie das Layout wurden von mir selbst erstellt und getestet. Ausnahme: Die Javascript-Plugins "Fancybox" (Lightbox Plugin) und "Nivo-Slider" (Slideshow-Plugin).
 
 
 4. Layout/ HTML
