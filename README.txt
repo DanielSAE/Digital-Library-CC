@@ -1,4 +1,4 @@
-Daniel Böttcher, Student SAE Institute Leipzig (Webdesign & Development, 1. Studienjahr)
+Daniel Bï¿½ttcher, Student SAE Institute Leipzig (Webdesign & Development, 1. Studienjahr)
 
 
 Dokumentation "Digital Library", Coding Contest
@@ -6,21 +6,21 @@ Dokumentation "Digital Library", Coding Contest
 
 Einleitung
 
-Die Aufgabenstellung des Coding-Contest (04.04. - 06.05.2012) habe ich für mich so interpretiert, dass eine Digitale Bibliothek (bzw. Online-Bibliothek) gefordert ist, an der sich User anmelden/ einloggen kann, nach Büchern recherchieren und diese für einen Geldbetrag/ Tag ausleihen können. Ein oder mehrere Administrato/ren verwalten den Buchbestand und die User. Die Preise/ Tag sind fiktiv.
+Die Aufgabenstellung des Coding-Contest (04.04. - 06.05.2012) habe ich fï¿½r mich so interpretiert, dass eine Digitale Bibliothek (bzw. Online-Bibliothek) gefordert ist, an der sich User anmelden/ einloggen, nach Bï¿½chern recherchieren und diese fï¿½r einen Geldbetrag/ Tag ausleihen kï¿½nnen. Ein oder mehrere Administrato/ren verwalten den Buchbestand und die User. Die Preise/ Tag sind fiktiv.
 
-Die Ausleihe erfolgt in Form einer Postsendung, in der das gewünschte Material enthalten ist. Der Ausleihzeitraum beginnt ab Erhalt der Postsendung und endet bei Abgabe der Sendung beim Versandservice. Die Leihdauer der Bücher ist frei wählbar.
+Die Ausleihe erfolgt in Form einer Postsendung, in der das gewï¿½nschte Material enthalten ist. Der Ausleihzeitraum beginnt ab Erhalt der Postsendung und endet bei Abgabe der Sendung beim Versandservice. Die Leihdauer der Bï¿½cher ist frei wï¿½hlbar.
 
-Die Administration der Bibliothek erfolgt über ein oder mehrere Administrator/en, die über einen "Admin-Zugang" alle notwendigen Buchinformationen(Erscheinungsdatum, Autor, Inhalt, ISBN etc.) sicherstellen, und halten diese auf dem aktuellen Stand. Desweiteren hat der Administrator Zugang zu allen Nutzerprofilen und kann alle offenen Ausleihvorgänge einsehen, um deren Ablauf zu verfolgen.
+Die Administration der Bibliothek erfolgt ï¿½ber ein oder mehrere Administrator/en, die ï¿½ber einen "Admin-Zugang" alle notwendigen Buchinformationen(Erscheinungsdatum, Autor, Inhalt, ISBN etc.) sicherstellen, und halten diese auf dem aktuellen Stand. Desweiteren hat der Administrator Zugang zu allen Nutzerprofilen und kann alle offenen Ausleihvorgï¿½nge einsehen, um deren Ablauf zu verfolgen.
 
-Ich habe eine grafische Oberfläche für die Bibliothek mit den nachfolgend (in Punkt 2) beschriebenen Features erstellt.
+Ich habe eine grafische Oberflï¿½che fï¿½r die Bibliothek mit den nachfolgend (in Punkt 2) beschriebenen Features erstellt.
 
 
 1. Installation
 
 
-Es wird eine Entwicklungsumgebung benötigt, die PHP interpretieren kann (z.B. PHP 5.3). Desweiteren wird eine MySQL Datenbank benötigt, die im Ordner "Datenbank" im Root hinterlegt ist. Die Datenbankeinstellungen erfolgen über das File "configuration.inc.php" im Ordner "inc/config/".
+Es wird eine Entwicklungsumgebung benï¿½tigt, die PHP interpretieren kann (z.B. PHP 5.3). Desweiteren wird eine MySQL Datenbank benï¿½tigt, die im Ordner "Datenbank" im Root hinterlegt ist. Die Datenbankeinstellungen erfolgen ï¿½ber das File "configuration.inc.php" im Ordner "inc/config/".
 
-Die Applikation muss in der vorliegenden Ordnerstruktur in die Entwicklungsumgebung übernommen sowie die Datenbankeinstellungen vorgenommen werden.
+Die Applikation muss in der vorliegenden Ordnerstruktur in die Entwicklungsumgebung ï¿½bernommen sowie die Datenbankeinstellungen vorgenommen werden.
 
 
 2. Aufbau der Applikation
@@ -28,21 +28,21 @@ Die Applikation muss in der vorliegenden Ordnerstruktur in die Entwicklungsumgeb
 
 2.1 Offline Modus:
 
-Der Offline-User hat Zugriff auf die Buch-Rechereche (Suche, Kategorien, etc.), kann aber keine Titel vormerken bzw. ausleihen. Die Kriterien für die Volltextsuche sind Buchtitel oder ISBN (-13) Nummer.
+Der Offline-User hat Zugriff auf die Buch-Rechereche (Suche, Kategorien, etc.), kann aber keine Titel vormerken bzw. ausleihen. Die Kriterien fï¿½r die Volltextsuche sind Buchtitel oder ISBN (-13) Nummer.
 
-Um sich zu registrierenn muss der Offline-User ein Formular ausfüllen sowie seine E-Mail Adresse per Link bestätigen.
+Um sich zu registrieren muss der Offline-User ein Formular ausfï¿½llen sowie seine E-Mail Adresse per Link bestï¿½tigen.
 
 
 2.2 Online-Modus - User
 
-Der Online-User kann alle verfügbaren Features nutzen: Bücher vormerken, ausleihen sowie den aktuellen Ausleihstatus einsehen. Es gibt grundsätzlich keine Vorgabe für die maximale Ausleihdauer eines Buches. Weiterhin kann der Online-User seine persönlichen Daten (Adresse, Lieferadresse und Passwort) ändern. Auch vorhanden: Das "Passwort-Vergessen"-Feature.
+Der Online-User kann alle verfï¿½gbaren Features nutzen: Bï¿½cher vormerken, ausleihen sowie den aktuellen Ausleihstatus einsehen. Es gibt grundsï¿½tzlich keine Vorgabe fï¿½r die maximale Ausleihdauer eines Buches. Weiterhin kann der Online-User seine persï¿½nlichen Daten (Adresse, Lieferadresse und Passwort) ï¿½ndern. Auch vorhanden: Das "Passwort-Vergessen"-Feature.
 
 
 2.3 Online-Modus - Administrator
 
-Der Administrator kann selbst keine Bücher ausleihen. Er ist für die Verwaltung des Buchbestandes zuständig. So hat er die Möglichkeit unter "Buch hinzufügen" neues Material hinzuzufügen bzw. unter "Editieren"/ "Daten ändern" Aktualisierungen vorzunehmen.
-Er hat Zugriff auf alle aktuellen Ausleihvoränge.
-In der Benutzerverwaltung lassen sich sämtliche Adressdaten und Accountinformationen einsehen. Hier ist es ebenfalls möglich, an einen "normalen User" Adminrechte zu vergeben. Dieser Fall tritt z.B. dann ein, wenn weitere Admin's mit der Verwaltung der Bibliothek beauftragt werden sollen. Diese melden sich zuerst als User und werden zum "Admin" ernannt.
+Der Administrator kann selbst keine Bï¿½cher ausleihen. Er ist fï¿½r die Verwaltung des Buchbestandes zustï¿½ndig. So hat er die Mï¿½glichkeit unter "Buch hinzufï¿½gen" neues Material hinzuzufï¿½gen bzw. unter "Editieren"/ "Daten ï¿½ndern" Aktualisierungen vorzunehmen.
+Er hat Zugriff auf alle aktuellen Ausleihvorï¿½nge.
+In der Benutzerverwaltung lassen sich sï¿½mtliche Adressdaten und Accountinformationen einsehen. Hier ist es ebenfalls mï¿½glich, an einen "normalen User" Adminrechte zu vergeben. Dieser Fall tritt z.B. dann ein, wenn weitere Admin's mit der Verwaltung der Bibliothek beauftragt werden sollen. Diese melden sich zuerst als User und werden zum "Admin" ernannt.
 
 Information: Es wurden in dieser Version bereits zwei User angelegt:
 
@@ -52,15 +52,15 @@ Passwort: test_user
 Username: test_admin //(Admin)
 Passwort: test_admin
 
-Mindestens ein Administrator muss mit gültigem Account standardmäßig immer in der Datenbank vorhanden sein, um die Betreuung der Bibliotheks-Oberfläche zu gewährleisten.
+Mindestens ein Administrator muss mit gï¿½ltigem Account standardmï¿½ï¿½ig immer in der Datenbank vorhanden sein, um die Betreuung der Bibliotheks-Oberflï¿½che zu gewï¿½hrleisten.
 
-Desweiteren wurden ca. 15 Bücher unterschiedlicher Kategorien hinzugefügt.
+Desweiteren wurden ca. 15 Bï¿½cher unterschiedlicher Kategorien hinzugefï¿½gt.
 
 
 3. Vorhandener Quellcode
 
 
-Sämtlicher Quellcode (PHP, Javascript, HTML) sowie das Layout wurden von mir selbst erstellt und getestet. Ausnahme: Die Javascript-Plugins "Fancybox" (Lightbox Plugin) und "Nivo-Slider" (Slideshow-Plugin).
+Sï¿½mtlicher Quellcode (PHP, Javascript, HTML) sowie das Layout wurden von mir selbst erstellt und getestet. Ausnahme: Die Javascript-Plugins "Fancybox" (Lightbox Plugin) und "Nivo-Slider" (Slideshow-Plugin).
 
 
 4. Layout/ HTML
@@ -72,19 +72,19 @@ Das Layout wurde im XHTML Strict Standard erstellt. Der Footer ist bis auf die K
 5. Ausblick: Bezahlsystem
 
 
-Als Bezahlsystem würde ich Paypal aufgrund des zügigen Geldtransfers integrieren. Ich habe davon abgesehen, die Paypal-Sandbox-Technologie in dieser Applikation zu integrieren, da sich der Bestellvorgang dadurch nur recht aufwändig testen lässt. Im Endeffekt läuft es bei der Integration darauf hinaus, den Paypal-Bezahlbutton (Formular mit Hidden-Feldern) mit allen notwendigen Informationen zu "versorgen" und die Paypal-Informationen nach dem Bezahlvorgang zu validieren und auszuwerten.
+Als Bezahlsystem wï¿½rde ich Paypal aufgrund des zï¿½gigen Geldtransfers integrieren. Ich habe davon abgesehen, die Paypal-Sandbox-Technologie in dieser Applikation zu integrieren, da sich der Bestellvorgang dadurch nur recht aufwï¿½ndig testen lï¿½sst. Im Endeffekt lï¿½uft es bei der Integration darauf hinaus, den Paypal-Bezahlbutton (Formular mit Hidden-Feldern) mit allen notwendigen Informationen zu "versorgen" und die Paypal-Informationen nach dem Bezahlvorgang zu validieren und auszuwerten.
 
-In dieser Version der Applikation wird durch den Klick auf den "Ausleihen"-Button der Ausleihvorgang abgeschlossen, ohne eine reelle finanzielle Transaktion durchzuführen.
+In dieser Version der Applikation wird durch den Klick auf den "Ausleihen"-Button der Ausleihvorgang abgeschlossen, ohne eine reelle finanzielle Transaktion durchzufï¿½hren.
 
 
 6. Ordnerstruktur
 
 
-Eine kurze Erklärung der Funktionen der Dateien im Ordner "inc" (includes):
+Eine kurze Erklï¿½rung der Funktionen der Dateien im Ordner "inc" (includes):
 
 actions
-	class_book.inc.php 	// Aktionen zur Verwaltung des Buchbestandes (z.B. Löschen, Hinzufügen, Aktualisieren) 
-	class_user.inc.php	// Aktionen zur Verwaltung der User (z.B. Löschen, Hinzufügen, Aktualisieren) 
+	class_book.inc.php 	// Aktionen zur Verwaltung des Buchbestandes (z.B. Lï¿½schen, Hinzufï¿½gen, Aktualisieren) 
+	class_user.inc.php	// Aktionen zur Verwaltung der User (z.B. Lï¿½schen, Hinzufï¿½gen, Aktualisieren) 
 	class_mailer.inc.php	// Mailversand
 
 config
@@ -98,7 +98,7 @@ display
 	class_display_library.inc.php	// dynamische HTML-Ausgabe der Bibliothek
 
 global 
-	class_functions.inc.php	// Hilfsfunktionen (Datumsformatierungen, Blätterfunktionen,…)
+	class_functions.inc.php	// Hilfsfunktionen (Datumsformatierungen, Blï¿½tterfunktionen,ï¿½)
 
 html
 	static_html.inc.php	// Statisches HTML
@@ -109,13 +109,13 @@ validation
 
 class_pdf.inc.php // Erzeugen PDF-Ausgabe
 class_session.php // Erzeugen Session, Session-Variablen, Timeout
-class_site.inc.php // Erzeugen statisches HTML Grundgerüst
+class_site.inc.php // Erzeugen statisches HTML Grundgerï¿½st
 
 
 7. Testserver
 
 
-Die Webapplikation läuft auf meinem Testserver und ist unter folgenden Zugangsdaten voll verfügbar:
+Die Webapplikation lï¿½uft auf meinem Testserver und ist unter folgenden Zugangsdaten voll verfï¿½gbar:
 
 FTP:
 
@@ -128,13 +128,13 @@ Datenbank:
 URL: https://www.net-server.de/phpMyAdmin/index.php
 User: sae3
 PW: netsh105137
-Server: db11.net-server.de (im Dropdown auswählen)
+Server: db11.net-server.de (im Dropdown auswï¿½hlen)
 
 Live-Betrieb-URL: www.daniel-boettcher.com/library
 
 
 
 
-06.05.2012 Daniel Böttcher
+06.05.2012 Daniel Bï¿½ttcher
 E-Mail: daniel_boettcher@gmx.net
 
